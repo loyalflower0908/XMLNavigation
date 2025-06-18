@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 네비게이션 그래프의 루트 요소 -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/mainFragment">
+
+    <!-- MainFragment: 첫 화면 -->
+<fragment
+android:id="@+id/mainFragment"
+android:name="com.loyalflower.xmlnavigation.MainFragment"
+android:label="MainFragment">
+
+<!-- MainFragment → SecondFragment로 이동하는 action -->
+<action
+    android:id="@+id/action_mainFragment_to_secondFragment"
+    app:destination="@id/secondFragment" />
+</fragment>
+
+    <!-- SecondFragment: 버튼 누른 후 이동될 화면 -->
+<fragment
+android:id="@+id/secondFragment"
+android:name="com.loyalflower.xmlnavigation.SecondFragment"
+android:label="SecondFragment" />
+    </navigation>

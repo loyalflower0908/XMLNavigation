@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+    이 FragmentContainerView는 NavHostFragment를 포함하며,
+    네비게이션 그래프(nav_graph.xml)를 통해 화면 전환을 관리합니다.
+
+    - android:id: 이 컨테이너의 ID로, 코드에서 찾을 때 사용
+    - android:name: 포함할 Fragment 클래스 (NavHostFragment)
+    - app:navGraph: 사용할 네비게이션 그래프 리소스 지정
+    - app:defaultNavHost: true로 설정 시, 시스템 뒤로가기 버튼을 이 NavHost에 위임
+-->
+<androidx.fragment.app.FragmentContainerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_host_fragment_container"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:navGraph="@navigation/nav_graph"
+    app:defaultNavHost="true" />

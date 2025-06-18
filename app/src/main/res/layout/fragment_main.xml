@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    이 레이아웃은 MainFragment에서 사용됩니다.
+
+    - 최상위는 FrameLayout으로, 전체 화면을 감싸고 중심 정렬합니다.
+    - 그 안에는 세로 방향의 LinearLayout이 중심에 위치하고,
+      그 안에 버튼 하나가 들어 있어 화면 가운데에 버튼이 보입니다.
+    - 버튼을 누르면 SecondFragment로 이동하도록 연결됩니다.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_navigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="두 번째 화면으로 이동" />
+    </LinearLayout>
+</FrameLayout>
